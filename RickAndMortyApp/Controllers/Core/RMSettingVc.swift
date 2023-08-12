@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/// controller to show and search for character
 final class RMSettingVc: UIViewController {
 
     override func viewDidLoad() {

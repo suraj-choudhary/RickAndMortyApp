@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+/// controller to show and search for character
 final class RMEpisodeVc: UIViewController {
 
     override func viewDidLoad() {
@@ -15,8 +15,5 @@ final class RMEpisodeVc: UIViewController {
         
         view.backgroundColor = .systemBackground
     }
-    
-
-  
 
 }
