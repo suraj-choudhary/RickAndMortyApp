@@ -19,10 +19,7 @@ final class RMService {
     enum RMServiceError: Error {
         case failedToCreateRequest
         case failedToGetData
-        
     }
-    
-    
     /// Send rick and morty Api Calls
     /// - Parameters:
     ///   - request: request instance
@@ -59,8 +56,6 @@ final class RMService {
         }
         task.resume()
     }
-    
-    
     private func request(from rmRequest: RMRequest) -> URLRequest? {
         
         guard let url = rmRequest.url else {
@@ -72,7 +67,6 @@ final class RMService {
         
         return request
     }
-    
 }
 extension RMRequest {
     static let listCharacter = RMRequest(endPoint: .character)

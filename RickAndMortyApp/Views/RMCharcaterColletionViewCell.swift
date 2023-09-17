@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 class RMCharcaterColletionViewCell: UICollectionViewCell {
     static let cellIndentifier = "RMCharcaterColletionViewCell"
     private let imageView: UIImageView = {
@@ -15,7 +16,6 @@ class RMCharcaterColletionViewCell: UICollectionViewCell {
         return imageView
         
     }()
-    
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label

@@ -8,8 +8,10 @@
 import UIKit
 //controller to show single character
 final class RMCharacterDetailViewController: UIViewController {
+    private let viewModel: RMCharacterDetailViewModel
     
     init(viewModel: RMCharacterDetailViewModel) {
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -17,9 +19,10 @@ final class RMCharacterDetailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
+    /// Life cycle method
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
+        title = viewModel.title
     }
 }

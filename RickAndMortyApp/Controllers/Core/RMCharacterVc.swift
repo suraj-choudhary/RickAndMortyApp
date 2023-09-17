@@ -21,7 +21,12 @@ final class RMCharacterVc: UIViewController, RMcharacterListViewDelegate {
     
 
     func rmCharacterListView(_ characterLisView: RMcharacterListView, didselectCharacter character: RMCharacter) {
-        print(character.image)
+        
+        let viewModel = RMCharacterDetailViewModel(charcater: character)
+        let detailVc = RMCharacterDetailViewController(viewModel: viewModel)
+        detailVc.navigationItem.largeTitleDisplayMode = .never
+        navigationController?.pushViewController(detailVc, animated: true)
+        
     }
     
     

@@ -7,9 +7,7 @@
 
 import Foundation
 import UIKit
-
 protocol RMcharacterListViewDelegate: AnyObject {
-    
     func rmCharacterListView(_ characterLisView: RMcharacterListView,
                              didselectCharacter character: RMCharacter
     )
@@ -18,6 +16,7 @@ final class RMcharacterListView: UIView {
     private let viewModel = RMCharacterListViewModel()
     
     public weak var delegate: RMcharacterListViewDelegate?
+    
     private let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
         spinner.hidesWhenStopped = true
@@ -25,8 +24,6 @@ final class RMcharacterListView: UIView {
         return spinner
         
     }()
-    
-    
     private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -38,6 +35,8 @@ final class RMcharacterListView: UIView {
         colletionView.translatesAutoresizingMaskIntoConstraints = false
         colletionView.register(RMCharcaterColletionViewCell.self,
                                forCellWithReuseIdentifier: RMCharcaterColletionViewCell.cellIndentifier)
+        
+        colletionView.register(RMFooteLoadingCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: RMFooteLoadingCollectionReusableView.identifier)
         return colletionView
     }()
     
@@ -50,7 +49,6 @@ final class RMcharacterListView: UIView {
         spinner.startAnimating()
         viewModel.delegate = self
         viewModel.fetchCharacter()
-        
         setupColletionView()
     }
     
@@ -75,7 +73,6 @@ final class RMcharacterListView: UIView {
     }
     
     private func setupColletionView() {
-        
         collectionView.dataSource = viewModel
         collectionView.delegate = viewModel
     }
@@ -88,8 +85,7 @@ extension RMcharacterListView: RMCharacterListViewModelDelegate {
         
         delegate?.rmCharacterListView(self, didselectCharacter: character)
     }
-    
-    
+
     func didLoadInitialCharacter() {
         spinner.stopAnimating()
         collectionView.isHidden = false

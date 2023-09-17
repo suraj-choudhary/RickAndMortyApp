@@ -12,8 +12,7 @@ final class RMCharcaterColletionViewCellViewModel {
     let characterName: String
     let characterStatus: RMCharacterStatus
     let characterImageUrl: URL?
-    
-    
+
     init (characterName: String,
           characterStatus: RMCharacterStatus,
           charaterImageUrl: URL?) {

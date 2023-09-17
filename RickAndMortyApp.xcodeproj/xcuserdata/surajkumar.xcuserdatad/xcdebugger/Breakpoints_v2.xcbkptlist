@@ -3,4 +3,70 @@
    uuid = "3560C2A0-7C74-4103-86EB-27BA120D76C6"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5035B92C-E2A1-4452-9DA1-02264D1CCB30"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyApp/ViewModels/RMCharacterListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "591A1F11-ABFC-421A-B520-D2A435ADAEEC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "RickAndMortyApp/ViewModels/RMCharacterListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
+            landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "591A1F11-ABFC-421A-B520-D2A435ADAEEC - c3898b295f96b2cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyApp.RMCharacterListViewModel.scrollViewDidScroll(__C.UIScrollView) -&gt; ()"
+                  moduleName = "RickAndMortyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surajkumar/Desktop/RickAndMortyApp/RickAndMortyApp/ViewModels/RMCharacterListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "591A1F11-ABFC-421A-B520-D2A435ADAEEC - c3898b295f96b2cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RickAndMortyApp.RMCharacterListViewModel.scrollViewDidScroll(__C.UIScrollView) -&gt; ()"
+                  moduleName = "RickAndMortyApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/surajkumar/Desktop/RickAndMortyApp/RickAndMortyApp/ViewModels/RMCharacterListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "332">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
